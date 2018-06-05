@@ -32,7 +32,6 @@ locationBtn.addEventListener('click', function (event) {
   navigator.geolocation.getCurrentPosition(function (position) {
     locationBtn.style.display = 'inline-block';
     locationLoader.style.display = 'none';
-    //fetchedLocation = {lat: position.coords.latitude, position.coords.longitude};
 
     var url = "https://nominatim.openstreetmap.org/reverse?lat="+position.coords.latitude+"&lon="+position.coords.longitude+"&format=json&json_callback=preencherDados";
 
@@ -83,17 +82,6 @@ function initializeMedia() {
     }
   }
         
-  /*navigator.mediaDevices.getUserMedia({video: {facingMode: (front ? "environment" : "user"), width: {min: 320, max: 1920}, height: {max: 240}}})
-    .then(function(stream) {
-      videoPlayer.srcObject = stream;
-      videoPlayer.style.display = 'block';
-    })
-    .catch(function(err) {
-      captureButton.style.display = 'none'; 
-      imagePickerArea.style.display = 'block';
-    });*/
-
-
 
 navigator.mediaDevices.enumerateDevices()
         .then(devices => {
@@ -116,11 +104,7 @@ navigator.mediaDevices.enumerateDevices()
 
       })
         .then(stream => {
-          /*if (window.webkitURL) {
-            videoPlayer.src = window.webkitURL.createObjectURL(stream);
-            localMediaStream = stream;
-            videoPlayer.style.display = 'block';
-          } else*/ if (videoPlayer.mozSrcObject !== undefined) {
+          if (videoPlayer.mozSrcObject !== undefined) {
             videoPlayer.mozSrcObject = stream;
             videoPlayer.style.display = 'block';
           } else if (videoPlayer.srcObject !== undefined) {
@@ -189,9 +173,6 @@ imagePicker.addEventListener('change', function(event) {
         canvasElement.getContext('2d').drawImage(image, 0, 0, width, height);
         picture = canvasElement.toDataURL('image/jpeg', 0.75);
 
-        /*picture = reader.result;
-        picture = picture.toDataURL('image/jpeg', 0.75);*/
-
       }// image.onload
     }
     reader.readAsDataURL(picture);
@@ -204,15 +185,6 @@ function openCreatePostModal(event) {
   modalPost.style.transform = 'translateY(0)';
   initializeMedia();
   initializeLocation();
-
-  // if ('serviceWorker' in navigator) {
-  //   navigator.serviceWorker.getRegistrations()
-  //     .then(function(registrations) {
-  //       for (var i = 0; i < registrations.length; i++) {
-  //         registrations[i].unregister();
-  //       }
-  //     })
-  // }
 }
 
 function closeCreatePostModal() {
@@ -233,18 +205,6 @@ function closeCreatePostModal() {
 buttonAdicionar.addEventListener('click', openCreatePostModal);
 
 closeModalPost.addEventListener('click', closeCreatePostModal);
-
-// Currently not in use, allows to save assets in cache on demand otherwise
-/*function onSaveButtonClicked(event) {
-  console.log('clicked');
-  if ('caches' in window) {
-    caches.open('user-requested')
-      .then(function(cache) {
-        cache.add('https://httpbin.org/get');
-        cache.add('/src/images/sf-boat.jpg');
-      });
-  }
-}*/
 
 function clearCards() {
   while(noteList.hasChildNodes()) {
@@ -311,12 +271,7 @@ function createCard(data) {
   var cardTextContent = document.createElement('p');
   cardTextContent.textContent = data.content;
 
-  /*var cardHidden = document.createElement('span'); 
-  cardHidden.className = 'hide';
-  cardHidden.textContent = data.id;*/
-
   card.appendChild(cardReveal);
-  //card.appendChild(cardHidden);
   cardReveal.appendChild(cardTitleInside);
   cardReveal.appendChild(cardLocation);
   cardReveal.appendChild(cardTextContent);
@@ -374,13 +329,10 @@ form.addEventListener('submit', function(event) {
     return;
   }
 
-  //closeCreatePostModal();
+
   $('.modal.open').modal('close')
 
   if ('serviceWorker' in navigator) {
-    /*var postData = new FormData();
-    postData.append('file', picture, 'id' + '.png');*/
-
     navigator.serviceWorker.ready
       .then(function(sw) {
         var post = {
@@ -400,15 +352,6 @@ form.addEventListener('submit', function(event) {
         });
 
         picture = null;
-
-          //.then(function() {
-            //return sw.sync.register('sync-new-posts');
-          //})
-          //.then(function() {
-            //var snackbarContainer = document.querySelector('#confirmation-toast');
-            //var data = {message: 'Your Post was saved for syncing!'};
-            //snackbarContainer.MaterialSnackbar.showSnackbar(data);
-          //})
           
       })
       .catch(function(err) {
