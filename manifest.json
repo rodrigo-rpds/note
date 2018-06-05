@@ -1,0 +1,55 @@
+{
+  "name": "Note - Progressive Web App",
+  "short_name": "Note",
+  "icons": [
+    {
+      "src": "/src/imagens/icons/app-icon-48x48.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "/src/imagens/icons/app-icon-96x96.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "/src/imagens/icons/app-icon-128x128.png",
+      "type": "image/png",
+      "sizes": "128x128"
+    },
+    {
+      "src": "/src/imagens/icons/app-icon-144x144.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "/src/imagens/icons/app-icon-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/src/imagens/icons/app-icon-256x256.png",
+      "type": "image/png",
+      "sizes": "256x256"
+    },
+    {
+      "src": "/src/imagens/icons/app-icon-384x384.png",
+      "type": "image/png",
+      "sizes": "384x384"
+    },
+    {
+      "src": "/src/imagens/icons/app-icon-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/index.html",
+  "scope": ".",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#03A9F4",
+  "theme_color": "#03A9F4",
+  "description": "Aplicação para anotações com recursos de Progressive Web App",
+  "dir": "ltr",
+  "lang": "pt-br"
+}

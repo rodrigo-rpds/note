@@ -1,0 +1,51 @@
+img, picture, video, embed, iframe { max-width: 100%;}
+
+body { background-color: #f4f4f4;}
+
+.offlineColor { color: #9e9e9e;}
+.note-list { margin-bottom: 90px;}
+.card-title  { font-weight: bold;}
+#modal1 { bottom: 0; left: 0; max-height: none; right: 0; top: 0 !important; width: 100%;}
+.logoCustom { align-items: center; display: flex !important; height: 56px; vertical-align: middle;}
+.location { font-size: 12px;}
+.buttonsTop a { margin: 0 15px;}
+.modal .modal-content { padding: 0 0 24px 0;}
+.card .card-image img { margin: 0 auto; width: auto;}
+
+/*
+#modal-post { background: #fff; bottom: 0; min-height: calc(100vh - 56px); position: fixed; overflow-y: scroll; padding-bottom: 50px; text-align: center; top: 56px; transform: translateY(100vh); transition: transform 0.3s; width: 100%; z-index: 1001;}
+*/
+
+#modal-post video, #modal-post canvas {
+  max-height: 240px;
+  max-width: 100%;
+  display: none;
+  margin: auto;
+}
+
+#modal-post #pick-image, #modal-post #location-loader  {
+  display: none;
+}
+
+#modal-post #capture-btn {
+  margin: 10px auto;
+}
+
+#pick-image { margin-bottom: 15px;}
+
+@media (max-width: 600px) { 
+	h1 { font-size: 3.2rem;}
+}
+@media (min-width: 600px) { 
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+	.logoCustom img { padding: 10px 0;}
+}
+
