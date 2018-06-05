@@ -225,7 +225,7 @@ function createCard(data) {
   var cardBoxImg = document.createElement('div');
   cardBoxImg.className = 'card-image waves-effect waves-block waves-light';
   var cardImg = document.createElement('img');
-  cardImg.src = (data.picture) ? data.picture : "/src/imagens/layout/imagem-default.jpg";
+  cardImg.src = (data.picture) ? data.picture : "src/imagens/layout/imagem-default.jpg";
 
   card.appendChild(cardBoxImg);
   cardBoxImg.appendChild(cardImg);
