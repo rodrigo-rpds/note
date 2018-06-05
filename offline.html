@@ -2,31 +2,35 @@
 <html lang="pt-br">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Offline</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="manifest" href="/manifest.json">
 	<!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="src/css/custom.css">
 	<!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="src/css/materialize.min.css">
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="src/css/custom.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-title" content="Note">
+	<link rel="apple-touch-icon" href="src/imagens/icons/app-icon-144x144.png" sizes="144x144">
+	<meta name="msapplication-TileImage" content="/src/images/icons/app-icon-144x144.png">
+	<meta name="theme-color" content="#03A9F4">
 
 </head>
 <body>
 
 	<nav class="light-blue">
 		<div class="nav-wrapper container">
-			<a href="#" class="brand-logo logoCustom"><img class="logo" src="src/imagens/layout/logo-small.png" alt="Logo Diário"></a>
-			<ul class="right hide-on-med-and-down">
-		        <li><a href="#">Navbar Link</a></li>
-		    </ul>
-			<ul id="nav-mobile" class="sidenav">
-				<li><a href="sass.html">Sass</a></li>
-				<li><a href="badges.html">Components</a></li>
-				<li><a href="collapsible.html">JavaScript</a></li>
-			</ul>
-			<a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-
+			<a href="#" class="brand-logo logoCustom">
+				<img class="logo" 
+					srcset="src/imagens/layout/logo-small-mobile.png 92w,
+					        src/imagens/layout/logo-small.png 112w"
+					sizes="(max-width: 480px) 92px,
+					       (min-width: 481px) 112px"
+					src="src/imagens/layout/logo-small.png" alt="Logo Diário">
+			</a>
 		</div>
 	</nav>
 
