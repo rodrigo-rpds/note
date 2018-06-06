@@ -37,155 +37,77 @@
 	<div class="container">
 		<h1 class="center-align grey-text h1">Sem Anotações</h1>
 		<div class="row" id="note-list"></div>
-			<!-- <div class="col s12 m6 l3">
-				<div class="card sticky-action">
-					<div class="card-image waves-effect waves-block waves-light">
-						<img class="activator" src="src/imagens/layout/office.jpg">
-					</div>
-					<div class="card-content">
-						<span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-						<i class="date">08/05/2018</a></i>
-					</div>
-					<div class="card-action">
-					                <a class="waves-effect waves-light btn red">excluir</a>
-					            </div>
-					<div class="card-reveal">
-						<span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-						<small class="location">Localização</small>
-						<p>Here is some more information about this product that is only revealed once clicked on.</p>
-					</div>
-				</div>
-			</div> Fim Card -->
-		
-
-		<!-- <div class="fixed-action-btn">
-			<a id="buttonAdicinar" class="btn-floating btn-large waves-effect waves-light green modal-trigger" href="#modalForm">
-				<i class="large material-icons">add</i>
-			</a>
-		</div> -->
 	</div><!-- FIM CONTAINER -->
 
-<!-- 	<div id="modal-post">
-	<video id="player" autoplay></video>
-        <canvas id="canvas" width="531px" height="240px"></canvas>
-        <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" id="capture-btn">Capture
-        </button>
-        <div id="pick-image">
-          <h6>Pick an Image instead</h6>
-          <input type="file" accept="image/*" id="image-picker">
-        </div>
 
-	<div class="container">
-		<form>
-			<div class="input-field">
-	        	<input id="title" name="title" type="text" class="validate">
-	        	<label for="title">Título</label>
-	        </div>
-	        <div class="input-field">
-	        	<input id="location" name="location" type="text" class="validate">
-	        	<label for="location">Localização</label>
-	        </div>
 
-			<a class="waves-effect waves-light btn" id="location-btn">button</a>
-
-	         <div class="preloader-wrapper small active" id="location-loader">
-			    <div class="spinner-layer spinner-green-only">
-			      <div class="circle-clipper left">
-			        <div class="circle"></div>
-			      </div><div class="gap-patch">
-			        <div class="circle"></div>
-			      </div><div class="circle-clipper right">
-			        <div class="circle"></div>
-			      </div>
-			    </div>
-			  </div>
-
-	        <div class="input-field">
-	        	<textarea id="conteudo" class="materialize-textarea"></textarea>
-	        	<label for="conteudo">Conteúdo</label>
-	        </div>
-	        <div class="center-align">
-		        <button id="" class="btn waves-effect waves-light light-blue" type="submit">Anotar
-				    <i class="material-icons right">send</i>
-				</button>
-				<button id="close-modal-post" class="btn waves-effect waves-light red" type="button">Fechar
-				    <i class="material-icons right">close</i>
-				</button>
-			</div>
-		</form>
-	</div>
-</div> -->
-
-  <!-- Modal Trigger -->
+    <!-- Modal Trigger -->
   	<div class="fixed-action-btn">
 		<a id="buttonAdicinar" class="btn-floating btn-large waves-effect waves-light green modal-trigger" href="#modal1">
 			<i class="large material-icons">add</i>
 		</a>
 	</div> 
-<!--   <a class="waves-effect waves-light btn modal-trigger" href="#modal1" id="buttonAdicinar">Modal</a> -->
 
-  <!-- Modal Structure -->
-  <div id="modal1" class="modal">
+	<!-- Modal Structure -->
+	<div id="modal1" class="modal">
 
-    <div class="modal-content">
+		<div class="modal-content">
 
-		<div id="modal-post">
-			<video id="player" autoplay></video>
-		    <canvas id="canvas" width="320px" height="240px"></canvas>
+			<div id="modal-post">
+				<video id="player" autoplay></video>
+			    <canvas id="canvas" width="320px" height="240px"></canvas>
 
-		    <div class="container">
-		        <!-- <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" id="capture-btn">Capture
-		        </button> -->
-		        <div id="pick-image">
-		          <h6>Escolha uma imagem</h6>
-		          <input type="file" accept="image/*" id="image-picker">
-		        </div>
-
-				<div class="center-align buttonsTop">
-					<a class="btn-large btn-floating waves-effect waves-light green" id="capture-btn"><i class="material-icons">add_a_photo</i></a>
-					<a class="btn-large btn-floating waves-effect waves-light green" id="location-btn"><i class="material-icons">add_location</i></a>
-				</div>
-
-				<form>
-					<div class="input-field">
-			        	<input id="title" name="title" type="text" class="validate">
-			        	<label for="title">Título</label>
-			        </div>
-			        <div class="input-field">
-			        	<input id="location" name="location" type="text" class="validate">
-			        	<label for="location">Localização</label>
+			    <div class="container">
+			        <div id="pick-image">
+			          <h6>Escolha uma imagem</h6>
+			          <input type="file" accept="image/*" id="image-picker">
 			        </div>
 
-			         <div class="preloader-wrapper small active" id="location-loader">
-					    <div class="spinner-layer spinner-green-only">
-					      <div class="circle-clipper left">
-					        <div class="circle"></div>
-					      </div><div class="gap-patch">
-					        <div class="circle"></div>
-					      </div><div class="circle-clipper right">
-					        <div class="circle"></div>
-					      </div>
-					    </div>
-					  </div>
-
-			        <div class="input-field">
-			        	<textarea id="conteudo" class="materialize-textarea"></textarea>
-			        	<label for="conteudo">Conteúdo</label>
-			        </div>
-			        <div class="center-align">
-				        <button id="" class="btn waves-effect waves-light light-blue" type="submit">Anotar
-						    <i class="material-icons right">send</i>
-						</button>
-						<button id="close-modal-post" class="btn waves-effect waves-light red modal-close" type="button">Fechar
-						    <i class="material-icons right">close</i>
-						</button>
+					<div class="center-align buttonsTop">
+						<a class="btn-large btn-floating waves-effect waves-light green" id="capture-btn"><i class="material-icons">add_a_photo</i></a>
+						<a class="btn-large btn-floating waves-effect waves-light green" id="location-btn"><i class="material-icons">add_location</i></a>
 					</div>
-				</form>
-			</div>
-		</div> 
-    </div>
 
-  </div>
+					<form>
+						<div class="input-field">
+				        	<input id="title" name="title" type="text" class="validate">
+				        	<label for="title">Título</label>
+				        </div>
+				        <div class="input-field">
+				        	<input id="location" name="location" type="text" class="validate">
+				        	<label for="location">Localização</label>
+				        </div>
+
+				         <div class="preloader-wrapper small active" id="location-loader">
+						    <div class="spinner-layer spinner-green-only">
+						      <div class="circle-clipper left">
+						        <div class="circle"></div>
+						      </div><div class="gap-patch">
+						        <div class="circle"></div>
+						      </div><div class="circle-clipper right">
+						        <div class="circle"></div>
+						      </div>
+						    </div>
+						  </div>
+
+				        <div class="input-field">
+				        	<textarea id="conteudo" class="materialize-textarea"></textarea>
+				        	<label for="conteudo">Conteúdo</label>
+				        </div>
+				        <div class="center-align">
+					        <button id="" class="btn waves-effect waves-light light-blue" type="submit">Anotar
+							    <i class="material-icons right">send</i>
+							</button>
+							<button id="close-modal-post" class="btn waves-effect waves-light red modal-close" type="button">Fechar
+							    <i class="material-icons right">close</i>
+							</button>
+						</div>
+					</form>
+				</div>
+			</div> 
+		</div>
+
+	</div>
 
 	<!--JavaScript at end of body for optimized loading-->
 	<script src="src/js/jquery-2.1.1.min.js"></script>
@@ -196,7 +118,6 @@
 	<script src="src/js/utility.js"></script>
     <script src="src/js/app.js"></script>
     <script src="src/js/feed.js"></script>
-    <script src="src/js/custom.js"></script>
     <script>
     	(function($){
 		  $(function(){
