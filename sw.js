@@ -16,7 +16,6 @@ var STATIC_FILES = [
   'src/js/utility.js',
 	'src/js/app.js',
   'src/js/feed.js',
-  'src/js/custom.js',
 	'https://fonts.googleapis.com/icon?family=Material+Icons'
 ];
 
