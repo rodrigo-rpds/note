@@ -16,6 +16,8 @@ var STATIC_FILES = [
   'src/js/utility.js',
 	'src/js/app.js',
   'src/js/feed.js',
+  'src/imagens/icons/app-icon-144x144.png',
+  'src/imagens/icons/app-icon-256x256.png',
 	'https://fonts.googleapis.com/icon?family=Material+Icons'
 ];
 
