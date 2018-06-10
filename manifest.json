@@ -3,7 +3,7 @@
   "short_name": "Note",
   "icons": [
     {
-      "src": "/src/imagens/icons/app-icon-48x48.png",
+      "src": "src/imagens/icons/app-icon-48x48.png",
       "type": "image/png",
       "sizes": "48x48"
     },
