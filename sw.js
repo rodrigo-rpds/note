@@ -18,6 +18,7 @@ var STATIC_FILES = [
   'src/js/feed.js',
   'src/imagens/icons/app-icon-144x144.png',
   'src/imagens/icons/app-icon-256x256.png',
+  'src/imagens/layout/imagem-default.jpg',
 	'https://fonts.googleapis.com/icon?family=Material+Icons'
 ];
 
